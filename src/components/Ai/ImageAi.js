@@ -40,7 +40,7 @@ const ImageAi = () => {
     };
 
     const generateImage = () => {
-        if (!text) {
+        if (!text && !transcript) {
             alert('Please enter a prompt to generate an image.');
             return;
         }
@@ -54,7 +54,7 @@ const ImageAi = () => {
                 "content-type": "application/json",
                 "Authorization": "Bearer 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"
             },
-            body: JSON.stringify({ inputs: text }),
+            body: JSON.stringify({ inputs: text || transcript }),
         })
             .then((res) => res.blob())
             .then((blob) => {

@@ -37,6 +37,7 @@ const ImageAi = () => {
     const handleTextChange = (e) => {
         setText(e.target.value || transcript || (e.target.value && transcript));
         resetTranscript()
+    
     };
 
     const generateImage = () => {

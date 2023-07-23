@@ -1,0 +1,51 @@
+.text-col {
+    background-color: black;
+    color: white;
+}
+
+.view_btn {
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem 2rem;
+    background-color: white;
+    color: black;
+    outline: 1px;
+
+}
+
+.view_btn:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    transform: scale(1.05);
+    transition: all 0.5s ease-in;
+}
+
+.dark_color {
+    color: green;
+}
+/* home.css */
+.slide-image {
+    position: absolute;
+    bottom: 0; 
+    right: 0; 
+    transform: translate(50%, 50%) scale(0.5); /* Position the image at the bottom-right corner */
+    opacity: 0;
+    width: 70%; /* Adjust this size according to your images */
+    height: 80%; /* Adjust this size according to your images */
+    transition: opacity 0.5s, transform 1s;
+  }
+  
+  .slide-image.active {
+    bottom: 50%; /* Move the active image to the center vertically */
+    right: 50%; /* Move the active image to the center horizontally */
+    transform: translate(50%, 50%) scale(1); /* Center the image */
+    opacity: 1;
+  }
+  
+  .img-col {
+    background-color: rgb(233, 236, 236);
+    position: relative;
+    overflow: hidden;
+  }
+  

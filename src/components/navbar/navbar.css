@@ -1,0 +1,8 @@
+.navbar{
+    background-color: transparent;
+    color: black;
+}
+.menu:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
